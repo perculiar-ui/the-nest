@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanzania Wild Camp Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="banner-image">
+        <img src="imgs/the next.jpg" height="100px" width="100%" alt="Banner Image">
+        <div class="banner-content">
+            <h1>The Nest</h1>
+            <p>Arusha, Tanzania</p>
+            <p><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania | <!--<i class="fas fa-user"></i>--> User: The Nest Pass: tH3n35T23!</p>
+        </div>
+    </div>
+  <div class="container">
+    <!-- Header Section -->
+  
+    <!-- Tabs Section -->
+    <div class="tabs">
+      <button class="tab active" data-section="Drinks">Drinks</button>
+    <!--  <button class="tab" data-section = "juices">Juices</button>
+      <button class="tab" data-section="Cigarette">Cigarette</button>
+      <button class="tab" data-section="spa">SPA</button>
+      <button class="tab" data-section="Activities">Activities</button> 
+      <button class="tab" data-section="forms" onclick="window.location.href='Zita_Consent_Form_Online_Embedded_Logo.html'">Concent Form</button> -->
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search" class="search-input">
+      <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- Product Cards -->
+    <div id="Drinks" class="section active">
+    <div class="main-menu" >
+      <h2 class="section-heading">Drink Categories</h2>
+    <div class="product-cards">
+        
+      <div class="card" onclick="showSubMenu('soda')">
+        <img src="imgs/COCA.webp" alt="SODA" class="card-image">
+        <h2>SODA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('beer')">
+        <img src="imgs/beer/beer.jpg" alt="BEER" class="card-image">
+        <h2>BEER</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('champagne')">
+        <img src="imgs/wine-by-glass/pearl bay dry red.png" alt="WINE-BY-GLASS" class="card-image">
+        <h2>WINE BY BOTTLE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('wine-by-glass')">
+        <img src="imgs/wine-by-glass.jpg" alt="WINE-BY-GLASS" class="card-image">
+        <h2>WINE BY GLASS</h2>
+      </div>
+     <!-- <div class="card" onclick="showSubMenu('red-wine')">
+        <img src="imgs/red-wine.jpg" alt="RED WINE" class="card-image">
+        <h2>RED WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sparkling-wine')">
+        <img src="imgs/sparkling-wine.jpg" alt="SPARKLING WINE" class="card-image">
+        <h2>SPARKLING WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('white-wine')">
+        <img src="imgs/white-wine.jpg" alt="WHITE WINE" class="card-image">
+        <h2>WHITE WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('sweet-wine')">
+        <img src="imgs/sweet-wine.jpg" alt="SWEET WINE" class="card-image">
+        <h2>SWEET WINE</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('whiskey')">
+        <img src="imgs/whisky/Jack-daniels.jpeg" alt="WHISKY" class="card-image">
+        <h2>WHISKY</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('gin')">
+        <img src="imgs/gin.jpg" alt="GIN" class="card-image">
+        <h2>GIN</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('rum')">
+        <img src="imgs/rum/Captain Morgan Spiced.jpeg" alt="RUM" class="card-image">
+        <h2>RUM</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('brandy')">
+        <img src="imgs/brandy.jpg" alt="BRANDY/COGNAC" class="card-image">
+        <h2>BRANDY/COGNAC</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('vodka')">
+        <img src="imgs/vodka.jpg" alt="VODKA" class="card-image">
+        <h2>VODKA</h2>
+      </div>
+      <div class="card" onclick="showSubMenu('liquer')">
+        <img src="imgs/Liquer/Wild Africa Cream.jpeg" alt="LIQUER" class="card-image">
+        <h2>LIQUER</h2>
+      </div> -->
+    </div>
+    </div>
+    <div id="soda-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/COCA.webp" alt="Coke" class="some-image">
+            <div class="card-details">
+              <h5>CocaCola</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/fanta.jpeg" alt="fanta" class="some-image">
+            <div class="card-details">
+              <h5>Fanta</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/sprite.jpeg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>Sprite</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/cola-zero.jpeg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>Coca-zero</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/stoney-tanagwizi.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>Stone Tangawizi</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/Bitter-lemon.jpeg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>Bitter-lemon</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/tonic water.jpeg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>Tonic-Water</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+    </div>
+    </div>
+    <div id="beer-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/beer/beer.jpg" alt="beer" class="some-image">
+            <div class="card-details">
+              <h5>Serengeti</h5>
+              <h5>$5</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/beer/Kilimanjaro.jpg" alt="Kilimanjaro" class="some-image">
+            <div class="card-details">
+              <h5>Kilimanjaro</h5>
+              <h5>$5</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/beer/Safari.jpg" alt="Safari" class="some-image">
+            <div class="card-details">
+              <h5>Safari</h5>
+              <h5>$5</h5>
+            </div>
+            
+          </div>
+         <!-- <div class="card">
+            <img src="imgs/beer/redbull.jpeg" alt="redbull" class="some-image">
+            <div class="card-details">
+              <h5>Redbull</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div> 
+          <div class="card">
+            <img src="imgs/beer/SavannaCider.webp" alt="SavannaCider" class="some-image">
+            <div class="card-details">
+              <h5>Savannah Dry Cider</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div> -->
+    </div>
+    </div>
+    <div id="champagne-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/wine-by-glass/pearl bay dry red.png" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>Pearl bay dry red</h5>
+              <h5>$20</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/wine-by-glass/pearl bay dry white.png" alt="Laurent-Perrier" class="some-image">
+            <div class="card-details">
+              <h5>Pearl bay dry white</h5>
+              <h5>$20</h5>
+            </div>
+            
+          </div>
+         
+    </div>
+    </div>
+    <div id="wine-by-glass-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/wine-by-glass/pearl bay dry red.png" alt="Spier Dscover Chenin Blanc" class="some-image">
+            <div class="card-details">
+              <h5>Pearl bay dry red</h5>
+              <h5>$5</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/wine-by-glass/pearl bay dry white.png" alt="spier discover pinotage" class="some-image">
+            <div class="card-details">
+              <h5>Pearl bay dry white</h5>
+              <h5>$5</h5>
+            </div>
+            
+          <!--</div>
+          <div class="card">
+            <img src="imgs/wine-by-glass/swartland winemaker collection blanc de noir.png" alt="swartland winemaker collection blanc de noir" class="some-image">
+            <div class="card-details">
+              <h5>swartland winemaker collection blanc de noir</h5>
+              <h5>$5</h5>
+            </div>
+            
+          </div>-->
+         
+    </div>
+    </div>
+    <div id="red-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/red-wine/leopard's leap pinotage.jpeg" alt="leopard" class="some-image">
+            <div class="card-details">
+              <h5>leopard's leap pinotage</h5>
+              <h5>$30</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/red-wine/La motte millenium.jpeg" alt="la motte" class="some-image">
+            <div class="card-details">
+              <h5>la motte millenium</h5>
+              <h5>$45</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/red-wine/Bigi vipra bianca.jpeg" alt="bigi vipra" class="some-image">
+            <div class="card-details">
+              <h5>Bigi vipra bianca</h5>
+              <h5>$25</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/red-wine/Solar viejo tempranillo.jpeg" alt="solar viejo" class="some-image">
+            <div class="card-details">
+              <h5>Solar viejo tempranillo</h5>
+              <h5>$35</h5>
+            </div>
+            
+          </div>
+          
+    </div>
+    </div>
+    <div id="sparkling-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/sparkling-wine/freixenet cordon negro brut.jpeg" alt="freixenet" class="some-image">
+            <div class="card-details">
+              <h5>freixenet cordon negro brut</h5>
+              <h5>$40</h5>
+            </div>
+            
+          </div>
+          
+    </div>
+    </div>
+    <div id="white-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/white wine/la motte sauvignon blanc.jpeg" alt="la motte sauvignon" class="some-image">
+            <div class="card-details">
+              <h5>la motte sauvignon</h5>
+              <h5>$40</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/white wine/Leopard's leap chardonnay.jpeg" alt="leopard leap" class="some-image">
+            <div class="card-details">
+              <h5>Leopard's Leap chardonnay</h5>
+              <h5>$30</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/drinks/sprite.jpeg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>Sprite</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/white wine/Bigi vipra bianca.webp" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>Bigi Vipra Blanca</h5>
+              <h5>$25</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/white wine/bolla pinot grigio.jpg" alt="stone" class="some-image">
+            <div class="card-details">
+              <h5>Bolla Pinot Grigio</h5>
+              <h5>$35</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/white wine/B&G reserve chardonnay.jpeg" alt="Bitter-lemon" class="some-image">
+            <div class="card-details">
+              <h5>B&G Reserve Chardonnay</h5>
+              <h5>$25</h5>
+            </div>
+            
+          </div>
+    </div>
+    </div>
+    <div id="sweet-wine-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/sweetwine/mia-sweet.jpeg" alt="sweet-wine" class="some-image">
+            <div class="card-details">
+              <h5>Mia Cabbana Semi Sweet Red</h5>
+              <h5>$25</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/sweetwine/mia-semi-sweet.jpeg" alt="mia-semi-sweet" class="some-image">
+            <div class="card-details">
+              <h5>Mia Cabbana Semi Sweet White</h5>
+              <h5>$25</h5>
+            </div>
+            
+          </div>
+          
+    </div>
+    </div>
+    <div id="whiskey-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/whisky/Jameson.jpeg" alt="Jameson" class="some-image">
+            <div class="card-details">
+              <h5>Jameson</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/whisky/Johnny-walker-red-label.jpeg" alt="Johnny-walker-red-label" class="some-image">
+            <div class="card-details">
+              <h5>Johnny Walker Red-label</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/whisky/Johnny-walker-black-label.jpeg" alt="Johnny-walker-black-label" class="some-image">
+            <div class="card-details">
+              <h5>Johnny Walker Black-label</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/whisky/Jack-daniels.jpeg" alt="Jack-daniels" class="some-image">
+            <div class="card-details">
+              <h5>Jack-daniels</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/whisky/Glendfiddich'12 Y.O.jpeg" alt="Glendfiddich" class="some-image">
+            <div class="card-details">
+              <h5>Glendfiddich'12 YO</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/whisky/Dahlwinnie 15 YO.jpeg" alt="Dahlwinnie" class="some-image">
+            <div class="card-details">
+              <h5>Dahlwinnie'15 YO</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+    </div>
+    </div>
+    <div id="gin-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/gin/Konyagi.jpeg" alt="Konyagi" class="some-image">
+            <div class="card-details">
+              <h5>Konyagi</h5>
+              <h5>$2</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/gin/Tanqueray London Dry Gin.jpeg" alt="Tanqueray" class="some-image">
+            <div class="card-details">
+              <h5>Tanqueray London Dry Gin</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/gin/Gordon's Gin.jpeg" alt="sprite" class="some-image">
+            <div class="card-details">
+              <h5>Gordon's Gin</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/gin/Bombay.jpeg" alt="Coca-zero" class="some-image">
+            <div class="card-details">
+              <h5>Bombay</h5>
+              <h5>$4</h5>
+            </div>
+            
+            </div>
+          </div>
+    </div>
+    <div id="rum-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/rum/Captain Morgan Spiced.jpeg" alt="Captain Morgan" class="some-image">
+            <div class="card-details">
+              <h5>Captain Morgan Spiced</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+         
+    </div>
+    </div>
+    <div id="brandy-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/brandy/Hennessy.jpeg" alt="Hennessy" class="some-image">
+            <div class="card-details">
+              <h5>Hennessy</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          
+    </div>
+    </div>
+    <div id="vodka-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/vodka/Smirnoff Vodka.jpeg" alt="Smirnoff VODKA" class="some-image">
+            <div class="card-details">
+              <h5>Smirnoff Vodka</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/vodka/Absolute Blue.jpeg" alt="Absolute Blue" class="some-image">
+            <div class="card-details">
+              <h5>Absolute Blue</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+          
+    </div>
+    </div>
+    <div id="liquer-submenu" class="hidden">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/Liquer/Wild Africa Cream.jpeg" alt="Wild Africa" class="some-image">
+            <div class="card-details">
+              <h5>Wild Africa Cream</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/Liquer/Amarula.jpeg" alt="Amarula" class="some-image">
+            <div class="card-details">
+              <h5>Amarula</h5>
+              <h5>$3</h5>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/Liquer/khalua.jpeg" alt="khalua" class="some-image">
+            <div class="card-details">
+              <h5>Khalua</h5>
+              <h5>$4</h5>
+            </div>
+            
+          </div>
+        </div>    
+    </div>
+    </div>
+    </div>
+   <div id="juices" class="section">
+    <div class="product-cards">
+        <div class="card">
+            <img src="imgs/juices/mango-pineapple-tropical.jpeg" class="some-image">
+            <h6>Mango + Pineapple + Tropical</h6>
+            <h5>$3</h5>
+            
+        </div>
+        <div class="card">
+            <img src="imgs/juices/mango-orange.jpeg" class="some-image">
+            <h6>Mango + Orange</h6>
+            <h5>$3</h5>
+            
+        </div> 
+        <div class="card">
+            <img src="imgs/juices/fresh-on-request.jpeg" class="some-image">
+            <h6>Fresh Juices On Request</h6>
+            <h5>$4</h5>
+            
+        </div>
+    </div>
+   
+   </div>
+      <div id="Cigarette" class="section">
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/sm-cigarette.png" alt="CIGARETTE BRAND A" class="some-image">
+            <h5>SM Cigarette</h5>
+            <h5>$5</h5>
+          </div>
+          <div class="card">
+            <img src="imgs/embasssy-cigarettes.png" alt="CIGARETTE BRAND B" class="some-image">
+            <h5>Embassy Kings Cigarette</h5>
+            <h5>$5</h5>
+          </div>
+          <div class="card">
+            <img src="imgs/marlboro.jpeg" alt="CIGARETTE BRAND B" class="some-image">
+            <h5>Marlboro Cigarette</h5>
+            <h5>$5</h5>
+          </div>
+          <div class="card">
+            <img src="imgs/embassy-light.jpeg" alt="CIGARETTE BRAND B" class="some-image">
+            <h5>Embassy Light Cigarette</h5>
+            <h5>$5</h5>
+          </div>
+        </div>
+      </div>
+  
+      <div id="spa" class="section">
+       
+          <div class="product-cards">
+        <div class="card">
+          <img src="imgs/body-scrub.jpg" alt="Body Scrub" class="spa-image">
+          <div class="spa-details">
+            <h3>Body Scrub</h3>
+            <p>60 Mins</p>
+            <p>$50</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="imgs/facial-service.jpg" alt="Facial" class="spa-image">
+          <div class="spa-details">
+            <h3>Facial Treatment</h3>
+            <p>30 Mins</p>
+            <p>$30</p>
+          </div>
+          
+        </div>
+        <div class="card">
+            <img src="imgs/couple massage.jpg" alt="couple massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Couples Massage</h3>
+              <p>60 Mins</p>
+              <p>$60</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/fullbody.jpeg" alt="Fullbody massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Fullbody Massage</h3>
+              <p>45 Mins</p>
+              <p>$35</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/back-massage.webp" alt="back-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Back Massage</h3>
+              <p>30 Mins</p>
+              <p>$20</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/foot-massage.jpeg" alt="foot-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Foot Massage</h3>
+              <p>30 Mins</p>
+              <p>$15</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/foot-reflexology.jpg" alt="foot-reflexology" class="spa-image">
+            <div class="spa-details">
+              <h3>Foot Reflexology</h3>
+              <p>30 Mins</p>
+              <p>$20</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/Neck-massage.png" alt="Neck-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Neck&Shoulder</h3>
+              <p>20 Mins</p>
+              <p>$10</p>
+            </div>
+            
+          </div>  
+          <div class="card">
+            <img src="imgs/head-massage.jpg" alt="head-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Head Massage</h3>
+              <p>30 Mins</p>
+              <p>$20</p>
+            </div>
+            
+          </div>  
+          <div class="card">
+            <img src="imgs/deeptissue.jpg" alt="deeptissue-massage" class="spa-image">
+            <div class="spa-details">
+              <h3>Deep tissue Massage</h3>
+              <p>45 Mins</p>
+              <p>$40</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/manicure.webp" alt="manicure" class="spa-image">
+            <div class="spa-details">
+              <h3>Manicure + Gel</h3>
+              <p>30 Mins</p>
+              <p>$15</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/pedicure.jpg" alt="pedicure" class="spa-image">
+            <div class="spa-details">
+              <h3>Pedicure + Gel</h3>
+              <p>40 Mins</p>
+              <p>$20</p>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/sauna.jpg" alt="sauna" class="spa-image">
+            <div class="spa-details">
+              <h3>Sauna + Morrocan bath</h3>
+              <p>60 Mins</p>
+              <p>$60</p>
+            </div>
+            
+          </div>
+          </div>
+      </div>
+  
+  
+      <div id="Activities" class="section">
+        <div class="product-cards">
+          <div class="card">
+            <img src="imgs/hadzabe.jpeg" alt="hadzabe" class="card-image">
+            <h2>Hadzabe</h2>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/iraq-tribe.jpeg" alt="iraq-tribe" class="card-image">
+            <h2>Iraq Tribe</h2>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/cooking-class.jpeg" alt="iraq-tribe" class="card-image">
+            <h2>Cooking Class</h2>
+            
+          </div> <div class="card">
+            <img src="imgs/sundowns.jpeg" alt="sundowns" class="card-image">
+            <h2>Sundowns</h2>
+            
+          </div> <div class="card">
+            <img src="imgs/endoro-waterfalls.jpeg" alt="endoro-waterfalls" class="card-image">
+            <h2>Endoro Falls</h2>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/farm.jpeg" alt="farm" class="card-image">
+            <h2>Farm</h2>
+            
+          </div> <div class="card">
+            <img src="imgs/coffee-tour.jpeg" alt="coffee-tour" class="card-image">
+            <h2>Coffee Tour</h2>
+            
+          </div>
+          <div class="card">
+            <img src="imgs/maasai boma.jpeg" alt="maasai" class="card-image">
+            <h2>Maasai Boma</h2>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>
