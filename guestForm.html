@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Feedback Form - The Nest By Lemaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        label {
+            margin-right: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THE NEST BY LEMAYA</h1>
+        <h2>Guest Feedback Form</h2>
+        <p>Dear Guest,</p>
+        <p>Thank you for dining with us. Your feedback is very important to help us improve and offer exceptional service. Please take a moment to share your experience.</p>
+
+        <form action="#" method="post">
+            <h3>1. How would you rate the following?</h3>
+            <p>(Please select one number for each item: 1 = Poor, 5 = Excellent)</p>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <td>Quality of food</td>
+                    <td><input type="radio" name="quality_of_food" value="1"></td>
+                    <td><input type="radio" name="quality_of_food" value="2"></td>
+                    <td><input type="radio" name="quality_of_food" value="3"></td>
+                    <td><input type="radio" name="quality_of_food" value="4"></td>
+                    <td><input type="radio" name="quality_of_food" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Presentation of food</td>
+                    <td><input type="radio" name="presentation_of_food" value="1"></td>
+                    <td><input type="radio" name="presentation_of_food" value="2"></td>
+                    <td><input type="radio" name="presentation_of_food" value="3"></td>
+                    <td><input type="radio" name="presentation_of_food" value="4"></td>
+                    <td><input type="radio" name="presentation_of_food" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Cleanliness (Dining Area)</td>
+                    <td><input type="radio" name="cleanliness_dining" value="1"></td>
+                    <td><input type="radio" name="cleanliness_dining" value="2"></td>
+                    <td><input type="radio" name="cleanliness_dining" value="3"></td>
+                    <td><input type="radio" name="cleanliness_dining" value="4"></td>
+                    <td><input type="radio" name="cleanliness_dining" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Cleanliness (Restrooms)</td>
+                    <td><input type="radio" name="cleanliness_restrooms" value="1"></td>
+                    <td><input type="radio" name="cleanliness_restrooms" value="2"></td>
+                    <td><input type="radio" name="cleanliness_restrooms" value="3"></td>
+                    <td><input type="radio" name="cleanliness_restrooms" value="4"></td>
+                    <td><input type="radio" name="cleanliness_restrooms" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Ambience/Atmosphere</td>
+                    <td><input type="radio" name="ambience" value="1"></td>
+                    <td><input type="radio" name="ambience" value="2"></td>
+                    <td><input type="radio" name="ambience" value="3"></td>
+                    <td><input type="radio" name="ambience" value="4"></td>
+                    <td><input type="radio" name="ambience" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Service Friendliness</td>
+                    <td><input type="radio" name="service_friendliness" value="1"></td>
+                    <td><input type="radio" name="service_friendliness" value="2"></td>
+                    <td><input type="radio" name="service_friendliness" value="3"></td>
+                    <td><input type="radio" name="service_friendliness" value="4"></td>
+                    <td><input type="radio" name="service_friendliness" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Speed of Service</td>
+                    <td><input type="radio" name="speed_of_service" value="1"></td>
+                    <td><input type="radio" name="speed_of_service" value="2"></td>
+                    <td><input type="radio" name="speed_of_service" value="3"></td>
+                    <td><input type="radio" name="speed_of_service" value="4"></td>
+                    <td><input type="radio" name="speed_of_service" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Overall Experience</td>
+                    <td><input type="radio" name="overall_experience" value="1"></td>
+                    <td><input type="radio" name="overall_experience" value="2"></td>
+                    <td><input type="radio" name="overall_experience" value="3"></td>
+                    <td><input type="radio" name="overall_experience" value="4"></td>
+                    <td><input type="radio" name="overall_experience" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Music/Sound Level</td>
+                    <td><input type="radio" name="music_sound_level" value="1"></td>
+                    <td><input type="radio" name="music_sound_level" value="2"></td>
+                    <td><input type="radio" name="music_sound_level" value="3"></td>
+                    <td><input type="radio" name="music_sound_level" value="4"></td>
+                    <td><input type="radio" name="music_sound_level" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Staff Friendliness and Professionalism</td>
+                    <td><input type="radio" name="staff_friendliness_professionalism" value="1"></td>
+                    <td><input type="radio" name="staff_friendliness_professionalism" value="2"></td>
+                    <td><input type="radio" name="staff_friendliness_professionalism" value="3"></td>
+                    <td><input type="radio" name="staff_friendliness_professionalism" value="4"></td>
+                    <td><input type="radio" name="staff_friendliness_professionalism" value="5"></td>
+                </tr>
+            </table>
+
+            <h3>Additional Questions</h3>
+
+            <label for="enjoy_most">What did you enjoy most about your experience?</label><br>
+            <textarea id="enjoy_most" name="enjoy_most"></textarea>
+
+            <label for="improvement">What can we improve?</label><br>
+            <textarea id="improvement" name="improvement"></textarea>
+
+            <label for="disappointments">Was there anything disappointing or unsatisfactory?</label><br>
+            <textarea id="disappointments" name="disappointments"></textarea>
+
+            <label>Would you recommend us to others?</label><br>
+            <div class="checkbox-group">
+                <label><input type="radio" name="recommend" value="yes"> Yes</label>
+                <label><input type="radio" name="recommend" value="no"> No</label>
+            </div>
+
+            <label>Would you visit us again?</label><br>
+            <div class="checkbox-group">
+                <label><input type="radio" name="visit_again" value="yes"> Yes</label>
+                <label><input type="radio" name="visit_again" value="no"> No</label>
+            </div>
+
+            <label for="additional_comments">Additional Comments or Suggestions:</label><br>
+            <textarea id="additional_comments" name="additional_comments"></textarea>
+
+            <h3>Contact Information (Optional)</h3>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <button type="submit" style="margin-top: 20px;">Submit</button>
+        </form>
+        <p>Thank you for your feedback!</p>
+        <p>– The Nest By Lemaya Team</p>
+    </div>
+</body>
+</html>
